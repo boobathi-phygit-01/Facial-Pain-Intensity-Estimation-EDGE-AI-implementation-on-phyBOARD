@@ -24,6 +24,7 @@ Real-time facial pain detection running **fully on TensorFlow Lite**, built for 
 Pain is expressed through characteristic facial movements. These movements can be described objectively using the **Facial Action Coding System (FACS)**, which breaks facial expressions down into individual **Action Units (AUs)**, each tied to the contraction of specific facial muscles (e.g. AU4 = Brow Lowerer, AU6 = Cheek Raiser, AU43 = Eyes Closed).
 
 ![FACS Action Units](docs/facs_action_units.png)
+
 *FACS upper-face and lower-face Action Units.*
 
 The **Prkachin and Solomon Pain Intensity (PSPI)** metric turns the AUs most associated with pain into a single frame-level intensity score:
