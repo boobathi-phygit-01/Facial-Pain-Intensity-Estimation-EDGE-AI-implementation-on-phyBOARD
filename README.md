@@ -168,13 +168,20 @@ Press **`q`** to quit.
 
 ## Performance on phyBOARD
 
-Tested on the phyBOARD with the Dell WB3023 webcam (1920 x 1080) and the full pipeline (face detection + pain classification + tracking + display):
+Tested on the **phyBOARD-Pollux** (NXP i.MX 8M Plus) with NPU support (**2.3 TOPS**), using the Dell WB3023 webcam (1920 x 1080) and the full pipeline (face detection + pain classification + tracking + display).
+
+| Item | Details |
+|---|---|
+| Board | phyBOARD-Pollux (i.MX 8M Plus) |
+| NPU | Integrated NPU, 2.3 TOPS |
+| Image release | [BSP-Yocto-CelebrityFaceMatch-i.MX8MP-v0.7](https://download.phytec.de/Software/Linux/BSP-Yocto-CelebrityFaceMatch/BSP-Yocto-CelebrityFaceMatch-i.MX8MP-v0.7/ReleaseNotes) |
 
 | Metric | Result |
 |---|---|
 | **Average FPS** | **~12 FPS** |
 | **RAM usage** | **~32%** of the available **1.8 GB** |
 | Approx. memory footprint | ~0.58 GB |
+
 
 The pipeline fits comfortably in memory, leaving plenty of headroom for other applications on the board. Throughput can be raised further with `--npu` and `--every N`.
 
